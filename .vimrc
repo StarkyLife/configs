@@ -37,6 +37,10 @@ set signcolumn=yes
 set hidden
 set mouse=a
 
+set rtp+=/usr/local/opt/fzf
+
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
