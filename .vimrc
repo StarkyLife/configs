@@ -15,10 +15,12 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-fugitive'
 
 Plug 'editorconfig/editorconfig-vim'
 
 Plug 'tpope/vim-unimpaired'
+Plug 'junegunn/fzf'
 
 call plug#end()
 
