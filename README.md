@@ -11,7 +11,7 @@
 	- `brew install fzf`
 	- `$(brew --prefix)/opt/fzf/install`
 	-  add to .zshrc `export FZF_DEFAULT_OPTS='--height=40% --preview="cat {}" --preview-window=right:60%:wrap'`
-9. Install plugin manager for Vim [Plug](https://github.com/junegunn/vim-plug#installation), move `.vimrc` to HOME directory, run `vim` and type `:PlugInstall` to install all plugins from `.vimrc`.
+9. Move `.vimrc` to HOME directory, run `vim`, wait for plugin manager to be installed, then type `:PlugInstall` to install all plugins from `.vimrc`.
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 
