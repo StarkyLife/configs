@@ -44,8 +44,6 @@ set cmdheight=2
 " delays and poor user experience.
 set updatetime=300
 
-set rtp+=/usr/local/opt/fzf
-
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Use `[g` and `]g` to navigate diagnostics
