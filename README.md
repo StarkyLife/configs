@@ -13,6 +13,7 @@
 	-  add to .zshrc `export FZF_DEFAULT_OPTS='--height=40% --preview="cat {}" --preview-window=right:60%:wrap'`
 9. Install plugin manager for Vim [Plug](https://github.com/junegunn/vim-plug#installation), move `.vimrc` to HOME directory, run `vim` and type `:PlugInstall` to install all plugins from `.vimrc`.
 
-[tmux cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
+[TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 
-[vim plugins](https://vimawesome.com/)
+[VIM cheatsheet](https://vim.rtorr.com/)
+[VIM plugins](https://vimawesome.com/)
