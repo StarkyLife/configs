@@ -21,6 +21,7 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'tpope/vim-unimpaired'
 Plug 'junegunn/fzf'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -51,6 +52,13 @@ set cmdheight=2
 set updatetime=300
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+" ===========================> NERDTree setup
+
+nmap <silent> <leader>t :NERDTreeToggle<CR>
+nmap <C-\> :NERDTreeFind<CR>
+
+" ===========================> CoC setup
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
