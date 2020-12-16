@@ -16,5 +16,6 @@
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 
-[VIM cheatsheet](https://vim.rtorr.com/)
-[VIM plugins](https://vimawesome.com/)
+[VIM cheatsheet](https://vim.rtorr.com/)\
+[VIM plugins](https://vimawesome.com/)\
+[vimrc Дани Волкова](https://github.com/ziimir/dotfiles/blob/master/roles/tui/files/vimrc)
