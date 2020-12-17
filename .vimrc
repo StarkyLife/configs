@@ -20,7 +20,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
 
 Plug 'tpope/vim-unimpaired'
-Plug 'junegunn/fzf'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 Plug 'preservim/nerdtree'
 
 call plug#end()
@@ -43,6 +46,10 @@ set number
 set signcolumn=yes
 set hidden
 set mouse=a
+set hlsearch
+
+set nobackup
+set nowb
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -57,6 +64,11 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 nmap <silent> <leader>t :NERDTreeToggle<CR>
 nmap <C-\> :NERDTreeFind<CR>
+
+" ===========================> FZF setup
+
+nmap <silent> <C-f> :Files<CR>
+nmap <silent> <Leader>f :Rg<CR>
 
 " ===========================> CoC setup
 
