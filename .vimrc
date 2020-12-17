@@ -62,6 +62,9 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " ===========================> NERDTree setup
 
+let NERDTreeQuitOnOpen=1
+let NERDTreeShowHidden=1
+
 nmap <silent> <leader>t :NERDTreeToggle<CR>
 nmap <C-\> :NERDTreeFind<CR>
 
@@ -69,6 +72,7 @@ nmap <C-\> :NERDTreeFind<CR>
 
 nmap <silent> <C-f> :Files<CR>
 nmap <silent> <Leader>f :Rg<CR>
+nmap <silent> <Leader>b :Buffers<CR>
 
 " ===========================> CoC setup
 
