@@ -46,7 +46,10 @@ set number
 set signcolumn=yes
 set hidden
 set mouse=a
+
 set hlsearch
+set ignorecase
+set smartcase
 
 set nobackup
 set nowb
