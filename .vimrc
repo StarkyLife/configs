@@ -8,26 +8,40 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+" ui
+
 " Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tomasiser/vim-code-dark'
+
+" syntax
 
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
+
+" autocompletion and linting
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" git
+
 Plug 'tpope/vim-fugitive'
 
-Plug 'editorconfig/editorconfig-vim'
-
-Plug 'tpope/vim-unimpaired'
+" search
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" common
+
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-unimpaired'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 
 call plug#end()
+
+" ===========================> CoC server setup
 
 let g:coc_global_extensions = [
   \ 'coc-tsserver'
@@ -47,6 +61,8 @@ set number
 set signcolumn=yes
 set hidden
 set mouse=a
+set cmdheight=2
+set updatetime=300
 
 set hlsearch
 set ignorecase
@@ -54,13 +70,6 @@ set smartcase
 
 set nobackup
 set nowb
-
-" Give more space for displaying messages.
-set cmdheight=2
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=300
 
 filetype plugin indent on
 
