@@ -10,8 +10,8 @@ call plug#begin('~/.vim/plugged')
 
 " ui
 
-" Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tomasiser/vim-code-dark'
+Plug 'itchyny/lightline.vim'
 
 " syntax
 
@@ -50,10 +50,13 @@ if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint']
 endif
 
-" set background=dark
-" colorscheme palenight
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
 
-set termguicolors
+  set termguicolors
+endif
+
 colorscheme codedark
 
 syntax on
@@ -72,6 +75,8 @@ set nobackup
 set nowb
 
 filetype plugin indent on
+
+set laststatus=2
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
@@ -114,3 +119,12 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
+
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
