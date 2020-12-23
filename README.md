@@ -5,9 +5,8 @@
 3. Install `zsh` if needed (macOS already has zsh as default shell) - `brew install zsh`.
 4. Install [oh-my-zsh](https://ohmyz.sh/#install) and set `ZSH_THEME="apple"`.
 5. Install oh-my-zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
-6. Install tmux - `brew install tmux`.
-7. Run tmux (just type `tmux` in commandLine) and type `:source-file ~/.tmux.conf` to link configuration file from this repo.
-8. Install FZF (for better find experience)
+6. Install [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+7. Install FZF (for better find experience)
 	- `brew install fzf`
 	- `brew install ripgrep`
 	- `$(brew --prefix)/opt/fzf/install`
@@ -16,7 +15,9 @@
 export FZF_DEFAULT_COMMAND='rg --files'
 export FZF_DEFAULT_OPTS='-m --height 50% --border'
 ```
-9. Move `.vimrc` to HOME directory, run `vim`, wait for plugin manager to be installed, then type `:PlugInstall` to install all plugins from `.vimrc`.
+8. Install tmux - `brew install tmux`.
+9. Run tmux (just type `tmux` in commandLine) and type `:source-file ~/.tmux.conf` to link configuration file from this repo.
+10. Move `.vimrc` to HOME directory, run `vim`, wait for plugin manager to be installed, then type `:PlugInstall` to install all plugins from `.vimrc`.
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 
