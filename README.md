@@ -6,7 +6,7 @@
 4. Install [oh-my-zsh](https://ohmyz.sh/#install) and set `ZSH_THEME="apple"`.
 5. Install oh-my-zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
 6. Install tmux - `brew install tmux`.
-7. Run tmux (just type `tmux` in commandLine) and type `:source-file ~/.tmux.conf` to link configuration file from this repo.
+7. Run tmux (just type `tmux` in commandLine) and type <C-b> `:source-file ~/.tmux.conf` to link configuration file from this repo.
 8. Install FZF (for better find experience)
 	- `brew install fzf`
 	- `brew install ripgrep`
@@ -17,6 +17,7 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export FZF_DEFAULT_OPTS='-m --height 50% --border'
 ```
 9. Move `.vimrc` to HOME directory, run `vim`, wait for plugin manager to be installed, then type `:PlugInstall` to install all plugins from `.vimrc`.
+10. Move `.gitignore_global` to home directory and type `git config --global core.excludesfile ~/.gitignore_global`
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 

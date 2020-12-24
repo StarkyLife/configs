@@ -34,10 +34,11 @@ Plug 'junegunn/fzf.vim'
 
 " common
 
-Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-obsession'
 
 call plug#end()
 
@@ -65,20 +66,25 @@ set signcolumn=yes
 set hidden
 set mouse=a
 set cmdheight=2
-set updatetime=300
+set updatetime=100
+
+filetype plugin indent on
 
 set hlsearch
 set ignorecase
 set smartcase
+set nowrap
+set autoindent
+set expandtab
+set shiftwidth=4
 
 set nobackup
 set nowb
 
-filetype plugin indent on
-
 set laststatus=2
 
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+command! BufOnly silent! execute "%bd|e#|bd#"
 
 " ===========================> NERDTree setup
 
@@ -87,6 +93,31 @@ let NERDTreeShowHidden=1
 
 nmap <silent> <leader>t :NERDTreeToggle<CR>
 nmap <C-\> :NERDTreeFind<CR>
+
+" ====================> lightline setup
+let g:lightline = {
+    \ 'active': {
+        \ 'left': [
+            \ [ 'mode', 'paste' ],
+            \ [ 'readonly', 'relativepath', 'modified' ]
+        \ ],
+        \ 'right': [
+            \ [ 'lineinfo' ],
+            \ [ 'percent' ],
+            \ [ 'session', 'fileformat', 'fileencoding' ]
+        \ ]
+    \ },
+    \ 'inactive': {
+        \ 'left': [ [ 'relativepath' ] ]
+    \ },
+    \ 'component': {
+        \ 'readonly': '%{&readonly?"\ue0a2":""}',
+        \ 'session': '%{ObsessionStatus("\uf03d", "\uf28e")}'
+    \ },
+    \ 'component_visible_condition': {
+        \ 'session': '!empty(ObsessionStatus())'
+    \ }
+\ }
 
 " ===========================> FZF setup
 
