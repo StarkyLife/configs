@@ -78,6 +78,10 @@ set autoindent
 set expandtab
 set shiftwidth=4
 
+set wildmenu
+set wildmode=full
+set history=1000
+
 set nobackup
 set nowb
 
