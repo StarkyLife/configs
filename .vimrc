@@ -39,6 +39,8 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 call plug#end()
 
@@ -126,6 +128,9 @@ xmap ic <Plug>(coc-classobj-i)
 omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
+
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ac  <Plug>(coc-codeaction)
 
 " ===========================> NERDTree setup
 
