@@ -25,3 +25,4 @@ export FZF_DEFAULT_OPTS='-m --height 50% --border'
 [VIM cheatsheet](https://vim.rtorr.com/)\
 [VIM plugins](https://vimawesome.com/)\
 [vimrc Дани Волкова](https://github.com/ziimir/dotfiles/blob/master/roles/tui/files/vimrc)
+

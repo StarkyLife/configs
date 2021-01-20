@@ -1,0 +1,52 @@
+---
+
+- name: First touch
+  hosts: digital_ocean
+  user: root
+
+  tasks:
+    - name: Update system
+      apt:
+        update_cache: yes
+        upgrade: yes
+      notify: Reboot if needed
+
+    - name: Add user
+      script:
+        cmd: user-creation.sh {{ main_user_name }}
+
+    - name: Create ssh folder for user
+      file:
+        path: /home/{{ main_user_name }}/.ssh/
+        state: directory
+
+    - name: Copy authorization_keys to ssh folder
+      copy:
+        src: "{{ ssh_key_public_file }}"
+        dest: /home/{{ main_user_name }}/.ssh/authorized_keys
+        mode: 0644
+
+  handlers:
+    - name: Reboot if needed
+      reboot:
+
+- name: Configure user environment
+  hosts: digital_ocean
+  user: "{{ main_user_name }}"
+  become: true
+
+  tasks:
+    - name: Disable root login
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin\syes'
+        line: 'PermitRootLogin no'
+      notify: Restart SSHD
+
+
+  handlers:
+    - name: Restart SSHD
+      service:
+        name: sshd
+        state: restarted
+...

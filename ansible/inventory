@@ -1,0 +1,6 @@
+[digital_ocean]
+167.99.240.100
+
+[all:vars]
+main_user_name = starky
+ssh_key_public_file = ~/.ssh/linux.pub
