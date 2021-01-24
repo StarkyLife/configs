@@ -1,0 +1,50 @@
+---
+
+- name: Deploy app
+  hosts: digital_ocean
+  user: "{{ main_user_name }}"
+
+  vars:
+    repo_url: git@github.com:StarkyLife/imhio-app.git
+    app_name: imhio-app
+    app_port: 8080
+    yarn_bin: . ~/.nvm/nvm.sh && yarn
+    pm2_bin: . ~/.nvm/nvm.sh && pm2
+
+  tasks:
+    - name: List of active apps
+      shell: "{{ pm2_bin }} jlist"
+      args:
+        executable: /bin/bash
+      register: active_apps
+
+    - name: Delete current running app
+      shell: "{{ pm2_bin }} delete {{ app_name }}"
+      args:
+        executable: /bin/bash
+      when: active_apps.stdout.find(app_name) | int >= 0
+
+    - name: Clone/update repo
+      git:
+        accept_hostkey: yes
+        repo: "{{ repo_url }}"
+        dest: ~/projects/{{ app_name }}
+
+    - name: Install packages
+      shell: "{{ yarn_bin }}"
+      args:
+        executable: /bin/bash
+        chdir: ~/projects/{{ app_name }}
+
+    - name: Build app
+      shell: "{{ yarn_bin }} build"
+      args:
+        executable: /bin/bash
+        chdir: ~/projects/{{ app_name }}
+      
+    - name: Run app
+      shell: "{{ pm2_bin }} start yarn --name {{ app_name }} -- start -p {{ app_port }}"
+      args:
+        executable: /bin/bash
+        chdir: ~/projects/{{ app_name }}
+...
