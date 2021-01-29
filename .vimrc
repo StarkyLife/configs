@@ -61,6 +61,7 @@ syntax on
 set number
 set signcolumn=yes
 set hidden
+set ttymouse=xterm2
 set mouse=a
 set cmdheight=2
 set updatetime=100
