@@ -169,6 +169,6 @@ let g:lightline = {
 " ===========================> FZF setup
 
 nmap <silent> <C-f> :Files<CR>
-nmap <silent> <Leader>f :Rg<CR>
+nmap <silent> <Leader>f :Rg <C-R><C-W><CR>
 nmap <silent> <Leader>b :Buffers<CR>
 
