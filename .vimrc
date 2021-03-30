@@ -10,7 +10,8 @@ call plug#begin('~/.vim/plugged')
 
 " ui
 
-Plug 'tomasiser/vim-code-dark'
+" Plug 'tomasiser/vim-code-dark'
+Plug 'junegunn/seoul256.vim'
 Plug 'itchyny/lightline.vim'
 
 " syntax
@@ -46,7 +47,8 @@ call plug#end()
 
 packadd! matchit
 
-" ===========================> Native Vim setup
+
+" ======================> ColorScheme setup
 
 if exists('+termguicolors')
   let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
@@ -55,7 +57,12 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-colorscheme codedark
+" colorscheme codedark
+
+set background=dark
+colorscheme seoul256
+
+" ===========================> Native Vim setup
 
 syntax on
 set number
@@ -80,8 +87,10 @@ set wildmenu
 set wildmode=full
 set history=1000
 
+" no backup
 set nobackup
 set nowb
+set noswapfile
 
 set laststatus=2
 
@@ -171,4 +180,11 @@ let g:lightline = {
 nmap <silent> <C-f> :Files<CR>
 nmap <silent> <Leader>f :Rg <C-R><C-W><CR>
 nmap <silent> <Leader>b :Buffers<CR>
+
+" ===========================> Folding setup
+" https://medium.com/vim-drops/javascript-folding-on-vim-119c70d2e872
+set foldmethod=syntax
+set foldcolumn=0
+let javaScript_fold=1
+set foldlevelstart=99
 
