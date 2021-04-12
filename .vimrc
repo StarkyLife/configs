@@ -19,6 +19,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'tpope/vim-cucumber'
 
 " autocompletion and linting
 
