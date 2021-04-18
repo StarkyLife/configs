@@ -1,7 +1,7 @@
 # Ansible
 
-- Run with `ansible-playbook --vault-id pass@prompt --vault-id inventory@prompt deploy-app.yml`
-- Run with `ansible-playbook -K plays.yml` -----  `-K` = `--ask-become-pass`
+- Run with `ansible-playbook --vault-id pass@prompt plays.yml`
+- Run with `ansible-playbook --vault-id pass@prompt deploy-app.yml`
 
 Or if want to run specific part only, then use tags
 - run nginx part only - `ansible-playbook -K plays.yml --tags "nginx"`
