@@ -143,6 +143,9 @@ omap ac <Plug>(coc-classobj-a)
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
 
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
 " ===========================> NERDTree setup
 
 let NERDTreeQuitOnOpen=1
@@ -169,7 +172,7 @@ let g:lightline = {
     \ },
     \ 'component': {
         \ 'readonly': '%{&readonly?"\ue0a2":""}',
-        \ 'session': '%{ObsessionStatus("\uf03d", "\uf28e")}'
+        \ 'session': '%{ObsessionStatus("session-rec", "no-session")}'
     \ },
     \ 'component_visible_condition': {
         \ 'session': '!empty(ObsessionStatus())'
