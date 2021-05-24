@@ -1,7 +1,7 @@
 # How to configure from start
 
 1. Install [Homebrew](https://brew.sh/).
-2. Install [iTerm2](https://iterm2.com/).
+2. (optional) Install [iTerm2](https://iterm2.com/).
 3. Install `zsh` if needed (macOS already has zsh as default shell) - `brew install zsh`.
 4. Install [oh-my-zsh](https://ohmyz.sh/#install) and set `ZSH_THEME="apple"`.
 5. Install oh-my-zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
