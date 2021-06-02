@@ -1,3 +1,5 @@
+let g:polyglot_disabled = ['javascript', 'javascriptreact', 'typescript', 'typescriptreact']
+
 set nocompatible
 
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -16,10 +18,9 @@ Plug 'itchyny/lightline.vim'
 
 " syntax
 
-Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'tpope/vim-cucumber'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'sheerun/vim-polyglot'
 
 " autocompletion and linting
 
