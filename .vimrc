@@ -105,7 +105,7 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver'
   \ ]
 if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-  let g:coc_global_extensions += ['coc-eslint']
+  let g:coc_global_extensions += ['coc-eslint', 'coc-prettier']
 endif
 
 " Use `[g` and `]g` to navigate diagnostics
@@ -146,6 +146,9 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
+
+" Prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " ===========================> NERDTree setup
 
