@@ -19,6 +19,10 @@ export FZF_DEFAULT_OPTS='-m --height 50% --border'
 9. Run tmux (just type `tmux` in commandLine) and type <C-b> `:source-file ~/.tmux.conf` to link configuration file from this repo.
 10. Move `.vimrc` to HOME directory, run `vim`, wait for plugin manager to be installed, then type `:PlugInstall` to install all plugins from `.vimrc`.
 11. Move `.gitignore_global` to home directory and type `git config --global core.excludesfile ~/.gitignore_global`
+12. Add aliases to .zshrc (in the bottom) - and call `source ~/.zshrc`
+```
+alias gamt='git commit -am "temp"'
+```
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 
