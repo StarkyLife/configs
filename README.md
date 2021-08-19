@@ -21,7 +21,7 @@ export FZF_DEFAULT_OPTS='-m --height 50% --border'
 11. Move `.gitignore_global` to home directory and type `git config --global core.excludesfile ~/.gitignore_global`
 12. Add aliases to .zshrc (in the bottom) - and call `source ~/.zshrc`
 ```
-alias gamt='git commit -am "temp"'
+alias gamt='git add . && git commit -m "temp"'
 ```
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
