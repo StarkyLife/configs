@@ -23,6 +23,15 @@ export FZF_DEFAULT_OPTS='-m --height 50% --border'
 ```
 alias gamt='git add . && git commit -m "temp"'
 ```
+13. Configure autoformatting with prettier -> run in Vim `:CocConfig` -> paste
+```
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+```
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 
