@@ -31,6 +31,8 @@ alias gamt='git add . && git commit -m "temp"'
     "typescript",
     "typescriptreact"
   ]
+  // or
+  "eslint.autoFixOnSave": true
 ```
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
