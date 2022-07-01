@@ -25,13 +25,14 @@ alias gamt='git add . && git commit -m "temp"'
 ```
 13. Configure autoformatting with prettier -> run in Vim `:CocConfig` -> paste
 ```
+  // prettier
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact"
   ]
-  // or
+  // or for eslint
   "eslint.autoFixOnSave": true
 ```
 
