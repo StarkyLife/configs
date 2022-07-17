@@ -34,6 +34,17 @@ alias gamt='git add . && git commit -m "temp"'
   ]
   // or for eslint
   "eslint.autoFixOnSave": true
+  
+  // for haskell-language-server
+  "languageserver": {
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+      "filetypes": ["haskell", "lhaskell", "hs"]
+    }
+  }
+
 ```
 
 [TMUX cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
