@@ -22,6 +22,7 @@ export FZF_DEFAULT_OPTS='-m --height 50% --border'
 12. Add aliases to .zshrc (in the bottom) - and call `source ~/.zshrc`
 ```
 alias gamt='git add . && git commit -m "temp"'
+function gri () git rebase -i @~$1
 ```
 13. Configure autoformatting with prettier -> run in Vim `:CocConfig` -> paste
 ```
