@@ -102,7 +102,8 @@ command! BufOnly silent! execute "%bd|e#|bd#"
 " ===========================> CoC server setup
 
 let g:coc_global_extensions = [
-  \ 'coc-tsserver'
+  \ 'coc-tsserver',
+  \ 'coc-snippets'
   \ ]
 if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint', 'coc-prettier']

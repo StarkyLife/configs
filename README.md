@@ -34,7 +34,12 @@ function gri () git rebase -i @~$1
     "typescriptreact"
   ]
   // or for eslint
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+
+  // for snippets
+  "snippets.ultisnips.enable": false,
+  // copy paste "snippets" folder
+  "snippets.textmateSnippetsRoots": ["~/.vim/snippets"]
   
   // for haskell-language-server
   "languageserver": {

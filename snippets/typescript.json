@@ -1,0 +1,22 @@
+{
+  "Test case": {
+    "prefix": "it-expect",
+    "body": [
+      "it('should', () => {",
+      "\texpect(${0:true}).toBe(true);",
+      "});"
+    ],
+    "description": "Unit test case"
+  },
+  "Test suite": {
+    "prefix": "d-it-expect",
+    "body": [
+      "describe('name', () => {",
+      "\tit('should', () => {",
+      "\t\texpect(${0:true}).toBe(true);",
+      "\t});",
+      "})"
+    ],
+    "description": "Unit test suite"
+  }
+}
