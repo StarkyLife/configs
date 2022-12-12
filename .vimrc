@@ -13,7 +13,8 @@ call plug#begin('~/.vim/plugged')
 " ui
 
 " Plug 'tomasiser/vim-code-dark'
-Plug 'junegunn/seoul256.vim'
+" Plug 'junegunn/seoul256.vim'
+Plug 'sainnhe/everforest'
 Plug 'itchyny/lightline.vim'
 
 " syntax
@@ -59,10 +60,11 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-" colorscheme codedark
-
+let g:everforest_background = 'soft'
 set background=light
-colorscheme seoul256-light
+" colorscheme seoul256-light
+" colorscheme codedark
+colorscheme everforest
 
 " ===========================> Native Vim setup
 
