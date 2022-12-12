@@ -61,8 +61,8 @@ endif
 
 " colorscheme codedark
 
-set background=dark
-colorscheme seoul256
+set background=light
+colorscheme seoul256-light
 
 " ===========================> Native Vim setup
 
