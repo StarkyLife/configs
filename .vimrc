@@ -147,6 +147,9 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
+" Confirm completion
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
