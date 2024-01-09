@@ -21,6 +21,8 @@ export FZF_DEFAULT_OPTS='-m --height 50% --border'
 11. Move `.gitignore_global` to home directory and type `git config --global core.excludesfile ~/.gitignore_global`
 12. Add aliases to .zshrc (in the bottom) - and call `source ~/.zshrc`
 ```
+export EDITOR='nvim'
+alias vim='nvim'
 alias gamt='git add . && git commit -m "temp"'
 function gri () git rebase -i @~$1
 ```
