@@ -1,8 +1,0 @@
-[digital_ocean]
-207.154.227.144
-
-[all:vars]
-main_user_name = starky
-
-ssh_key_public_file = ~/.ssh/linux.pub
-ssh_private_key_for_github = ~/.ssh/github
