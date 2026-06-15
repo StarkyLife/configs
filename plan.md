@@ -1,5 +1,7 @@
 # Neovim Modernization Plan
 
+This file is the source of truth for this project. The AI agent should read it at the start of every session and align suggestions with the current phase below.
+
 ## Goal
 
 Create a modern Neovim configuration in a new `nvim-new` folder without modifying the existing `nvim` config.
