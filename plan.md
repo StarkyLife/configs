@@ -34,7 +34,7 @@ nvim-new/
 
 This structure keeps the config small, modular, and easy to learn from.
 
-## Phase 1: Minimal Working Config
+## Phase 1: Minimal Working Config ✅
 
 Create the basic config skeleton:
 
@@ -52,7 +52,7 @@ Initial behavior:
 - Bootstrap `lazy.nvim`.
 - Confirm Neovim opens without errors.
 
-## Phase 2: Core UI
+## Phase 2: Core UI ✅
 
 Add a small UI layer:
 
