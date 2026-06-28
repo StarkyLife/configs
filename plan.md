@@ -2,6 +2,21 @@
 
 This file is the source of truth for this project. The AI agent should read it at the start of every session and align suggestions with the current phase below.
 
+## Progress
+
+| Phase | Status |
+|-------|--------|
+| 1 — Minimal Working Config | done |
+| 2 — Core UI | done |
+| 3 — Navigation | done |
+| 4 — Syntax And Editing | done |
+| 5 — LSP | **current** |
+| 6 — Completion | pending |
+| 7 — Formatting And Linting | pending |
+| 8 — Git | pending |
+| 9 — AI Coding Tools In Terminal | pending |
+| 10 — Polish | pending |
+
 ## Goal
 
 Create a modern Neovim configuration in a new `nvim-new` folder without modifying the existing `nvim` config.
@@ -63,7 +78,7 @@ Add a small UI layer:
 
 Keep the UI useful but not overloaded.
 
-## Phase 3: Navigation
+## Phase 3: Navigation ✅
 
 Add navigation tools:
 
@@ -87,7 +102,7 @@ Useful starting keymaps:
 - `<leader>ff` for Telescope file search.
 - `<leader>fg` for Telescope live grep.
 
-## Phase 4: Syntax And Editing
+## Phase 4: Syntax And Editing ✅
 
 Add modern syntax and editing tools:
 
