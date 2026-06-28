@@ -1,1 +1,4 @@
 WRN 2026-06-28T13:02:08.145 ?.81157    server_start:197: Failed to start server: operation not permitted: /var/folders/92/hwm27ffn55x04sn55r55rjsc0000gn/T/nvim.ilshat_ismagilov/jNFnPk/nvim-new.81157.0
+WRN 2026-06-28T16:28:36.471 ?.9337     server_start:197: Failed to start server: operation not permitted: /var/folders/92/hwm27ffn55x04sn55r55rjsc0000gn/T/nvim.ilshat_ismagilov/QpBgNA/nvim-new.9337.0
+WRN 2026-06-28T16:58:58.706 ?.13474    server_start:197: Failed to start server: operation not permitted: /var/folders/92/hwm27ffn55x04sn55r55rjsc0000gn/T/nvim.ilshat_ismagilov/i5BRLs/nvim-new.13474.0
+WRN 2026-06-28T16:59:02.913 ?.13518    server_start:197: Failed to start server: operation not permitted: /var/folders/92/hwm27ffn55x04sn55r55rjsc0000gn/T/nvim.ilshat_ismagilov/YeMRu8/nvim.13518.0

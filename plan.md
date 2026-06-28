@@ -14,8 +14,8 @@ This file is the source of truth for this project. The AI agent should read it a
 | 2 — Core UI | done |
 | 3 — Navigation | done |
 | 4 — Syntax And Editing | done |
-| 5 — LSP | **current** |
-| 6 — Completion | pending |
+| 5 — LSP | done |
+| 6 — Completion | **current** |
 | 7 — Formatting And Linting | pending |
 | 8 — Git | pending |
 | 9 — AI Coding Tools In Terminal | pending |
