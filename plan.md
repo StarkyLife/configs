@@ -2,7 +2,7 @@
 
 This file is the source of truth for this project. The AI agent should read it at the start of every session and align suggestions with the current phase below.
 
-**Last reviewed:** 2026-06-28  
+**Last reviewed:** 2026-06-29  
 **Neovim baseline:** 0.11.3+ (tested on 0.12.3)  
 **Config path:** `nvim-new/` (launch with `NVIM_APPNAME=nvim-new nvim`)
 
@@ -15,8 +15,8 @@ This file is the source of truth for this project. The AI agent should read it a
 | 3 — Navigation | done |
 | 4 — Syntax And Editing | done |
 | 5 — LSP | done |
-| 6 — Completion | **current** |
-| 7 — Formatting And Linting | pending |
+| 6 — Completion | done |
+| 7 — Formatting And Linting | **current** |
 | 8 — Git | pending |
 | 9 — AI Coding Tools In Terminal | pending |
 | 10 — Polish | pending |
@@ -301,7 +301,7 @@ Configure in `on_attach` inside `vim.lsp.config('*', ...)` or per-server:
 
 Capabilities for completion come in Phase 6 (`blink.cmp.get_lsp_capabilities()`).
 
-## Phase 6: Completion
+## Phase 6: Completion ✅
 
 **Default choice: `blink.cmp`** — batteries-included (LSP, buffer, path, snippets), used by kickstart.nvim and LazyVim as of 2025–2026.
 

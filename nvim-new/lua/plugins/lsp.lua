@@ -3,18 +3,12 @@ vim.env.PATH = vim.env.PATH .. ":" .. mason_bin
 
 vim.diagnostic.config({
   virtual_text = true,   -- inline error text after the line
-  signs = true,          -- icons in the gutter
+  signs = false,          -- icons in the gutter
   underline = true,      -- squiggly underlines
   update_in_insert = false,  -- don't flicker while typing
   severity_sort = true,  -- errors before warnings
 })
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-if capabilities.workspace then
-  capabilities.workspace.didChangeWatchedFiles = nil
-end
-
-vim.lsp.config("*", { capabilities = capabilities })
 vim.lsp.config("lua_ls", {
   settings = {
     Lua = {
