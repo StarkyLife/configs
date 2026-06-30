@@ -16,8 +16,8 @@ This file is the source of truth for this project. The AI agent should read it a
 | 4 — Syntax And Editing | done |
 | 5 — LSP | done |
 | 6 — Completion | done |
-| 7 — Formatting And Linting | **current** |
-| 8 — Git | pending |
+| 7 — Formatting And Linting | done |
+| 8 — Git | **current** |
 | 9 — AI Coding Tools In Terminal | pending |
 | 10 — Polish | pending |
 
@@ -332,7 +332,7 @@ Completion should support:
 
 Verify in insert mode in a `.lua` and `.ts` buffer after LSP attaches.
 
-## Phase 7: Formatting And Linting
+## Phase 7: Formatting And Linting ✅
 
 Add formatting with:
 
