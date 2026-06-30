@@ -30,5 +30,5 @@ vim.opt.termguicolors = true
 vim.opt.updatetime = 50
 
 -- Splits
-vim.opt.splitbelow = true
-vim.opt.splitright = true
+-- vim.opt.splitbelow = true
+-- vim.opt.splitright = true
